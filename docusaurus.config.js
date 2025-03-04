@@ -6,7 +6,6 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-const plantUmlPlugin = require('./src/plugins/plantuml-plugin');
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -17,10 +16,11 @@ const config = {
   favicon: 'img/favicon-sunat.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://storage.googleapis.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docu-test/',
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -60,7 +60,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          remarkPlugins: [plantUmlPlugin],
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
