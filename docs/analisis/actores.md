@@ -1,7 +1,7 @@
 # Actores del Sistema
 
 ## Introducción
-Este documento describe los actores del sistema bancario y sus interacciones con la plataforma.
+Este documento describe los actores del sistema bancario y sus interacciones con la plataforma German.
 
 ## Lista de Actores
 
