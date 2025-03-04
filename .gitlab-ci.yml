@@ -1,0 +1,32 @@
+image: node:18
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install -g docusaurus-init
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+
+deploy:
+  stage: deploy
+  image: google/cloud-sdk
+  before_script:
+    - echo "$GCP_SA_KEY" > key.json
+    - gcloud auth activate-service-account --key-file=key.json
+    - gcloud config set project $GCP_PROJECT_ID
+  script:
+    - gsutil -m rsync -R build gs://$GCS_BUCKET_NAME
+    - gsutil -m acl ch -r -u AllUsers:R gs://$GCS_BUCKET_NAME
