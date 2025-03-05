@@ -19,6 +19,8 @@ build:
   artifacts:
     paths:
       - build/
+  only:
+      - main
 
 deploy:
   stage: deploy
@@ -29,3 +31,5 @@ deploy:
     - gcloud config set project $GCP_PROJECT_ID
   script:
     - gsutil -m rsync -R build gs://$GCS_BUCKET_NAME
+  only:
+    - main
