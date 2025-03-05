@@ -29,4 +29,3 @@ deploy:
     - gcloud config set project $GCP_PROJECT_ID
   script:
     - gsutil -m rsync -R build gs://$GCS_BUCKET_NAME
-    - gsutil -m acl ch -r -u AllUsers:R gs://$GCS_BUCKET_NAME
