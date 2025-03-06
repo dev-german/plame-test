@@ -34,3 +34,6 @@ Este caso de uso describe el proceso de consulta de saldo dentro del sistema ban
 ## Prototipos
 
 ![Consulta de Saldo](/img/pantallas/consulta-saldo/consulta-saldo.png)
+
+## Casos de prueba
+
