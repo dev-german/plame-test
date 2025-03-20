@@ -11,7 +11,7 @@ Este documento describe los actores del sistema bancario y sus interacciones con
 **Descripción:** Usuario final que utiliza la aplicación bancaria para realizar operaciones financieras.  
 **Responsabilidades:**
 
-- Consultar saldo y movimientos.
+- Consultar saldo, movimientos y estados de cuenta.
 - Realizar transferencias y pagos.
 - Gestionar tarjetas y cuentas.
 
