@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_test=self.webpackChunkdocu_test||[]).push([[8068],{5466:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/plame-test/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
