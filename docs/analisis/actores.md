@@ -42,6 +42,15 @@ Este documento describe los actores del sistema bancario y sus interacciones con
 - Mantener la integridad y seguridad de los datos.
 - Comunicarse con otros sistemas financieros.
 
+### 5. Sistema Cajero Automático
+
+**Descripción:** Plataforma tecnológica que gestiona todas las operaciones del banco.  
+**Responsabilidades:**
+
+- Procesar y validar transacciones.
+- Mantener la integridad y seguridad de los datos.
+- Comunicarse con otros sistemas financieros.
+
 ## Diagrama de Actores
 
 ```mermaid
