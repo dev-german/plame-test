@@ -11,7 +11,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Inicio',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Plame docs',
   favicon: 'img/favicon-sunat.ico',
 
   // Set the production url of your site here
